@@ -20,10 +20,13 @@ const Sidebar = () => {
   <div className="center">
     <ul>
       <p className="title">MAIN</p>
+      <Link to="/">
       <li>
         <HomeIcon className="icon"/>
         <span>Dashboard</span>
       </li>
+      </Link>
+      
       <p className="title">LIST</p>
       <Link to="/users">
         <li>
@@ -37,7 +40,7 @@ const Sidebar = () => {
           <span>Products</span>
         </li>
       </Link>
-      <Link to="/orders">
+      <Link to="/products">
       <li>
         <BorderColorIcon className="icon" />
         <span>Orders</span>
