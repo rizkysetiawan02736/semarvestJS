@@ -30,7 +30,7 @@ function App() {
               element={<New inputs={productInputs} title="Add New Product" />}></Route>
             </Route>
             <Route path="categories">
-            <Route index element={<List />}></Route>
+            <Route index element={<Etalase />}></Route>
               <Route path=":userId" element={<Etalase />}></Route>
               <Route path="new" 
               element={<New inputs={productInputs} title="Add New Product" />}></Route>

@@ -4,17 +4,11 @@ import { Link } from "react-router-dom";
 
 const columns = [
   { field: "id", headerName: "ID", width: 70 },
-  { field: "firstName", headerName: "First name", width: 130 },
-  { field: "lastName", headerName: "Last name", width: 130 },
-  {
-    field: "age",
-    headerName: "Age",
-    type: "number",
-    width: 90,
-  },
+  
+  
   {
     field: "fullName",
-    headerName: "Full name",
+    headerName: "Product",
     description: "This column has a value getter and is not sortable.",
     sortable: false,
     width: 160,
@@ -23,31 +17,20 @@ const columns = [
 ];
 
 const rows = [
-  { id: 1, lastName: "Luwak", firstName: "Kopi", age: 35 },
-  { id: 2, lastName: "Lannister", firstName: "Cersei", age: 42 },
-  { id: 3, lastName: "Lannister", firstName: "Jaime", age: 45 },
-  { id: 4, lastName: "Stark", firstName: "Arya", age: 16 },
-  { id: 5, lastName: "Targaryen", firstName: "Daenerys", age: null },
-  { id: 6, lastName: "Melisandre", firstName: null, age: 150 },
-  { id: 7, lastName: "Clifford", firstName: "Ferrara", age: 44 },
-  { id: 8, lastName: "Frances", firstName: "Rossini", age: 36 },
-  { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65 },
+  { id: 1, lastName: "Luwak", firstName: "Kopi" },
+  { id: 2, lastName: "Saset", firstName: "Kopi" },
+  { id: 3, lastName: "Murni", firstName: "Susu" },
+  { id: 4, lastName: "Gembira", firstName: "Soda", age: 16 },
+  { id: 5, lastName: "Kuat", firstName: "Jahe", age: null },
+  { id: 6, lastName: "Ultra", firstName: "Susu", age: 150 },
+  { id: 7, lastName: "Gayo", firstName: "Kopi", age: 44 },
+  { id: 8, lastName: "Latte", firstName: "Matcha", age: 36 },
+  { id: 9, lastName: "Velvet", firstName: "Red", age: 65 },
 ];
 
 const actionColumn = [
   {
-    field: "action",
-    headerName: "Action",
-    width: 200,
-    renderCell: () => {
-      return (
-        <div className="cellAction">
-          <Link to="/users/test" style={{ textDecoration: "none" }}>
-            <div className="viewButton">View</div>
-          </Link>
-        </div>
-      );
-    },
+    
   },
 ];
 
@@ -55,10 +38,8 @@ const Tabelbaru = () => {
   return (
     <div className="tabelbaru">
       <div className="tabelbaruTitle">
-        Users
-        <Link to="/users/new" style={{ textDecoration: "none" }}>
-          Add New
-        </Link>
+        Kategori
+        
       </div>
       <DataGrid
         rows={rows}
