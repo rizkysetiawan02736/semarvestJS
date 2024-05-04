@@ -6,6 +6,7 @@ import AllInboxIcon from '@mui/icons-material/AllInbox';
 import BorderColorIcon from '@mui/icons-material/BorderColor';
 import FaceIcon from '@mui/icons-material/Face';
 import MeetingRoomIcon from '@mui/icons-material/MeetingRoom';
+import CategoryIcon from '@mui/icons-material/Category';
 
 const Sidebar = () => {
   return (
@@ -36,10 +37,18 @@ const Sidebar = () => {
           <span>Products</span>
         </li>
       </Link>
+      <Link to="/orders">
       <li>
         <BorderColorIcon className="icon" />
         <span>Orders</span>
       </li>
+      </Link>
+      <Link to="/categories">
+      <li>
+        <CategoryIcon className="icon" />
+        <span>Categories</span>
+      </li>
+      </Link>
       <p className="title">USER</p>
       <li>
         <FaceIcon className="icon"/>
